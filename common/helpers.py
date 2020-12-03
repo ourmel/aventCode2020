@@ -7,8 +7,9 @@ def read_integers(filename) :
     return l_int
 
 def read_text(filename) :
-    file1 = open(str('/input/' + filename +'.txt'), 'r')
+    file1 = open(str('../input/' + filename +'.txt'), 'r')
     l_str = file1.read().splitlines()
 
     return l_str
+
 

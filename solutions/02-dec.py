@@ -1,6 +1,8 @@
 from common.helpers import read_text
 import re
 
+# TODO clean & test
+
 day = 2
 input_file = str('input'+str(day))
 

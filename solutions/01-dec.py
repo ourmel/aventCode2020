@@ -1,8 +1,6 @@
 import itertools
 import math
 from common.helpers import read_integers
-import os
-
 
 def product(iter):
     return(math.prod(iter))
