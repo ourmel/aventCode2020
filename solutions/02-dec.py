@@ -1,7 +1,8 @@
-from helpers import read_text
+from common.helpers import read_text
 import re
 
-input_file = "input2"
+day = 2
+input_file = str('../input/input'+str(day))
 
 list_str = read_text(input_file)
 splitted_list = [re.split('-| ', x.replace(':', '')) for x in list_str]

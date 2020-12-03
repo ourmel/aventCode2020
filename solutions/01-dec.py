@@ -1,8 +1,8 @@
-import numpy as np
 import itertools
-from helpers import read_integers
+from common.helpers import read_integers
 
-input_file = "input1"
+day = 1
+input_file = str('../input/input'+str(day))
 
 list_int = read_integers(input_file)
 
