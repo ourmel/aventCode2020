@@ -26,7 +26,7 @@ if __name__ == '__main__':
     input_file = str('input' + str(day))
     list_integers = read_integers(input_file)
 
-    couple = is_sum_equals_val(list_integers,2020,2)
+    couple = is_sum_equals_val(list_integers,2020,4)
     prod_couple = product(couple)
 
     trio = is_sum_equals_val(list_integers,2020,3)
