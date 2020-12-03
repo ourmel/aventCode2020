@@ -2,7 +2,7 @@ from common.helpers import read_text
 import re
 
 day = 2
-input_file = str('../input/input'+str(day))
+input_file = str('input'+str(day))
 
 list_str = read_text(input_file)
 splitted_list = [re.split('-| ', x.replace(':', '')) for x in list_str]
