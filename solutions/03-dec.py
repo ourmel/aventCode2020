@@ -6,9 +6,9 @@ class tobPosition:
         self.x_pos = x
         self.y_pos = y
 
-    def move(obj,right, down ) :
-        x_pos = obj.x_pos + right
-        y_pos = obj.y_pos + down
+    def move(self,right, down ) :
+        x_pos = self.x_pos + right
+        y_pos = self.y_pos + down
         return [x_pos, y_pos]
 
 def get_point(x,y):
@@ -36,7 +36,7 @@ if __name__ == '__main__':
 
         while (pos.y_pos < (len(plan) -1)) :
 
-            pos.x_pos, pos.y_pos = tobPosition.move(pos,slope[0],slope[1])
+            pos.x_pos, pos.y_pos = pos.move(slope[0],slope[1])
             if pos.x_pos >= len(plan[0]):
                 plan = [x+x for x in plan]
             nb_of_trees_tmp = nb_of_trees_tmp + get_point(pos.x_pos, pos.y_pos)
